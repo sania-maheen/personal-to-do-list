@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    background: linear-gradient(185deg, #4b4ff0, #067a12);
+    padding: 12px;
+}
+
+.todo-app {
+    max-width: 550px;
+    background-color: #fafafa;
+    margin: 90px auto;
+    padding: 45px 30px 75px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.todo-app h2 {
+    color: #001f55;
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.todo-app h2 img {
+    width: 38px;
+    margin-left: 12px;
+}
+
+.todo-app:hover {
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1e6e6;
+    border-radius: 12px;
+    padding-left: 22px;
+    margin-bottom: 22px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 12px;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 14px 48px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0da119f3;
+    border-radius: 12px;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background-color: #077c12;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 52px;
+    user-select: none;
+    cursor: pointer;
+    position: relative; 
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(C:\Users\sania\AppData\Local\Temp\3beb155a-6f38-40bf-9a17-12589aba0b13_SourceCodesofAllprojects.rar.b13\Project-1-To-Do-List-Application\images\unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 6px;
+    left: 16px;
+}
+
+ul li.done {
+    color: #666666;
+    text-decoration: line-through;
+}
+
+ul li.done::before {
+    background-image: url(C:\Users\sania\AppData\Local\Temp\473ff634-1cde-4b56-bb93-38eb508e2cd8_SourceCodesofAllprojects.rar.cd8\Project-1-To-Do-List-Application\images\checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    color: #666666;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #21dabb;
+}
